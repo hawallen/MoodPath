@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg2"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_share_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/button"
+            android:text="返回" 
+            android:textSize="16dip" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/share_by_weibo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:gravity="center"
+                android:text="新浪微博"
+                android:textSize="18dip" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_share_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/button"
+            android:text="发送"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/et_share_text"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:padding="5dip" />
+
+        <LinearLayout
+            android:id="@+id/ll_share_text_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_margin="5dip"
+            android:background="@drawable/button"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/tv_share_text_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5px"
+                android:text="140"
+                android:textColor="#333" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/weibosdk_dialog_del" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg2"
+        android:gravity="center" >
+
+        <Button
+        	android:id="@+id/btn_share_take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/share_take_pic2" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_share_pic"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#00ffffff" >
+
+        <ImageView
+            android:id="@+id/iv_share_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="8dp" />
+
+        <ImageView
+            android:id="@+id/iv_share_del"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="right"
+            android:src="@drawable/weibosdk_dialog_del" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_today_shake"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+    <TextView
+        android:id="@+id/tv_today_shake" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="不要摇掉你的手机哦"/>
+
+    <SurfaceView
+    	android:id="@+id/sv_today_shake"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </SurfaceView>
+
+</LinearLayout>

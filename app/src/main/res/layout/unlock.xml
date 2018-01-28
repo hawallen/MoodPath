@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.AllenSTU.moodpath.layout.UnlockLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_unlock"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg2" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_unlock_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="60dip" />
+
+
+            <TextView
+                android:id="@+id/tv_unlock_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:textSize="60dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/unlock_time_bg2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/tv_unlock_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_unlock_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    
+    <ImageView
+        android:id="@+id/iv_unlock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/iv_unlock_locked"
+        android:background="@drawable/unlock_angry2" />
+
+    <ImageView
+        android:id="@+id/iv_unlock_locked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/unlocker2" />
+
+    <ImageView
+        android:id="@+id/iv_unlock5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/iv_unlock_locked"
+        android:background="@drawable/unlock_happy2" />
+
+    <ImageView
+        android:id="@+id/iv_unlock2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_unlock_locked"
+        android:layout_toLeftOf="@+id/iv_unlock_locked"
+        android:background="@drawable/unlock_sad2" />
+
+    <ImageView
+        android:id="@+id/iv_unlock3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_unlock_locked"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/unlock_uncertain2" />
+
+    <ImageView
+        android:id="@+id/iv_unlock4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_unlock_locked"
+        android:layout_toRightOf="@+id/iv_unlock_locked"
+        android:background="@drawable/unlock_smile2" />
+
+</com.AllenSTU.moodpath.layout.UnlockLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_trend_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bg2"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/iv_trend_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/top_menu_adivse2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="心语"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/iv_adivse_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/advise_slide" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ProgressBar
+            android:id="@+id/pb_adivse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/ll_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip" >
+            </LinearLayout>
+        </ScrollView>
+
+        <SlidingDrawer
+            android:id="@+id/slidingdrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:content="@+id/content"
+            android:handle="@+id/handle"
+            android:orientation="horizontal"
+            android:topOffset="0dip" >
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="8dp"
+                android:layout_height="fill_parent"
+                android:background="@color/tips_content_bg" />
+
+            <ListView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@color/gray"
+                android:cacheColorHint="#00000000" />
+        </SlidingDrawer>
+    </FrameLayout>
+
+</LinearLayout>

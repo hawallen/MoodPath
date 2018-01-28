@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">心迹</string>
+    
+    
+	<string name="attention">注意</string>
+    <string name="delete_all">是否要删除这条微博？</string>
+    <string name="ok">是</string>
+    <string name="cancel">否</string>
+    <string name="hello">Hello World, TextActivity!</string>
+    <string name="send">发送</string>
+    <string name="close">关闭</string>
+    <string name="share_dialog_title">新浪微博</string>
+    <string name="please_login">请登录！</string>
+    <string name="send_sucess">分享成功！</string>
+    <string name="send_failed">分享失败！</string>
+    <string name="del_pic">是否删除图片？</string>
+    
+    <color name="draw_line_has_data">#ff6666</color>
+    <color name="draw_line_no_data">#cccccc</color>
+    <color name="draw_line_on_zero">#55cccccc</color>
+    <color name="tips_content_bg">#99000000</color>
+    
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#666666</color>
+    <color name="light_gray1">#cccccc</color>
+    <color name="light_gray2">#dddddd</color>
+    <color name="red">#bb2222</color>
+    <color name="green">#88eccf2d</color>
+    
+    <color name="yellow">#ccaa22</color>
+    <color name="blue">#3377bb</color>
+    <color name="pink">#cc5588</color>
+    <color name="purple">#aaaa66bb</color>
+    
+    
+    <color name="happy">#ee7766</color>
+    <color name="smile">#eee333</color>
+    <color name="uncertain">#eeeecc</color>
+    <color name="sad">#ccee88</color>
+    <color name="angry">#ff8800</color>
+    
+    <color name="today_happy">#bbee7766</color>
+    <color name="today_smile">#bbeee333</color>
+    <color name="today_uncertain">#bbeeeecc</color>
+    <color name="today_sad">#bbccee88</color>
+    <color name="today_angry">#bbff8800</color>
+    <color name="setting_bg">#bbffffff</color>
+    
+    
+    <color name="advise">#88ffffff</color>
+    <color name="advise_highlight">#aa799B26</color>
+    <color name="male">#3377bb</color>
+    <color name="female">#ee6666</color>
+</resources>
